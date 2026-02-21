@@ -12,17 +12,18 @@ This repository demonstrates:
 
 For detailed documentation, see [tau-pytest-bdd/README.md](tau-pytest-bdd/README.md).
 
+
 ## Architecture
 
 ```mermaid
-graph TD
-   A[Feature Files (Gherkin)] --> B[Step Definitions (pytest-bdd)]
-   B --> C[Domain Models (Python)]
-   B --> D[API/Web Drivers]
-   C --> E[Business Logic]
-   D --> F[External Services]
-   B --> G[Shared Fixtures & Hooks]
-   G --> B
+flowchart TD
+  A[Feature Files (Gherkin)] --> B[Step Definitions (pytest-bdd)]
+  B --> C[Domain Models (Python)]
+  B --> D[API/Web Drivers]
+  C --> E[Business Logic]
+  D --> F[External Services]
+  B --> G[Shared Fixtures & Hooks]
+  G --> B
 ```
 
 **Key Components:**
