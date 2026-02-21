@@ -17,12 +17,20 @@ For detailed documentation, see [tau-pytest-bdd/README.md](tau-pytest-bdd/README
 
 ```mermaid
 flowchart TD
-  A[Feature Files (Gherkin)] --> B[Step Definitions (pytest-bdd)]
-  B --> C[Domain Models (Python)]
-  B --> D[API/Web Drivers]
-  C --> E[Business Logic]
-  D --> F[External Services]
-  B --> G[Shared Fixtures & Hooks]
+  A["Feature Files (Gherkin)"]
+  B["Step Definitions (pytest-bdd)"]
+  C["Domain Models (Python)"]
+  D["API/Web Drivers"]
+  E["Business Logic"]
+  F["External Services"]
+  G["Shared Fixtures & Hooks"]
+
+  A --> B
+  B --> C
+  B --> D
+  C --> E
+  D --> F
+  B --> G
   G --> B
 ```
 
