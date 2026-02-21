@@ -29,3 +29,9 @@ Feature: Cucumber Basket
       | 8       | 3    | 5     |
       | 10      | 4    | 6     |
       | 7       | 0    | 7     |
+
+
+    @full
+    Scenario: Check if the basket is full
+      Given the basket has "10" cucumbers
+      Then the basket is full
